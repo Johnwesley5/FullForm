@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+</head>
+
+<body>
+    <style>
+        label {
+            display: block;
+        }
+
+        form {
+            text-align: center;
+            background-color: bisque;
+            margin: 0px 550px 0px 550px;
+        }
+
+        input[type=submit]:hover {
+            background-color: red;
+        }
+
+        #submit {
+            margin-top: 10px;
+        }
+        #myfile{
+            margin-left: 100px;
+        }
+    </style>
+    
+    <Form action="index2.html" target="_blank">
+        <h2>Fill the details to Register</h2>
+        <label for="fname"><b>FirstName: </b></label>
+        <input type="text" name="fname" placeholder="Enter First Name" required>
+
+        <label for="lname"><b>LastName: </b></label>
+        <input type="text" name="lname" placeholder="Enter Last Name" required>
+
+        <label for="email"><b>Email: </b></label>
+        <input type="email" name="email" placeholder="Enter Email" required>
+
+        <label for="phn"><b>Phn No: </b></label>
+        <input type="tel" name="phn" placeholder="Enter Phn No" required>
+
+        <p><b>Choose your favorite Web language:</b></p>
+        <input type="radio" id="html" name="fav_language" value="HTML" required>
+        <label for="html">HTML</label>
+        <input type="radio" id="css" name="fav_language" value="CSS" required>
+        <label for="css">CSS</label>
+
+        <p><b>Languages known:</b></p>
+        <input type="checkbox" id="subject1" name=" subject1" value="Tamil" required>
+        <label for=" subject1"> Telugu </label>
+        <input type="checkbox" id=" subject2" name=" subject2" value="Telugu" required>
+        <label for=" subject2"> Hindi</label>
+        <input type="checkbox" id=" subject3" name=" subject3" value=" English" required>
+        <label for=" subject3"> English</label><br>
+
+        <label for="eng"><b>English speaking skills:</b></label>
+        <input type="range" id="eng" name="eng" min="0" max="100" required><br><br>
+
+        <label for="myfile"><b>Upload Resume:</b></label><br>
+        <input type="file" id="myfile" name="myfile" required><br><br>
+
+        <label for="Github"><b>Add your LinkedIn url:</b></label>
+        <input type="url" id="Github" name="Github" required><br>
+
+        <input type="submit" name="Submit" id="submit" value="Submit"><br><br>
+
+        <a href="index2.html" target="_blank">Already have an account</a>
+    </Form>
+</body>
+
+</html>
